@@ -1,0 +1,9 @@
+.title-section {
+  display: flex;
+  gap: 15px;
+  color: #FFF;
+}
+.title-section h2 {
+  font-size: 20px;
+  font-weight: 300;
+}

@@ -1,0 +1,21 @@
+.content-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 105px;
+  padding: 10px;
+  border: 1px solid #30A9DC;
+  border-radius: 10px;
+  color: #FFF;
+}
+.content-skills h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.content-skills svg {
+  width: 80px;
+  height: 80px;
+}

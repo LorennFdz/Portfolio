@@ -1,0 +1,18 @@
+.section-projects {
+  margin: 160px 0 30px 20px;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: Onest-Regular;
+  margin: 0 auto;
+  width: 280px;
+  gap: 35px;
+  overflow-x: hidden;
+}
+.load-more-project {
+  margin: 30px 0 0 20px;
+}

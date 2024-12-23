@@ -1,0 +1,59 @@
+.avatar-image {
+  margin-top: 93px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.avatar-image img {
+  width: 100%;
+}
+.available-to-work button {
+  background: linear-gradient(to right, #E76F00, #30A9DC);
+  width: 196px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+}
+.title-homePage h1 {
+  color: #FFF;
+  font-weight: 300;
+  font-size: 20px;
+}
+.span-homePage {
+  color: #008ECB;
+}
+.btns-homePage {
+  display: flex;
+  gap: 53px;
+}
+.btns-contact-homePage, .btns-svg-homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.btns-svg-homePage {
+  gap: 16px;
+}
+.btns-svg-homePage .icon-github {
+  width: 30px;
+  height: max-content;
+  cursor: pointer;
+}
+.btns-svg-homePage .icon-linkedIn2 {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.btns-svg-homePage article {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #008ECB;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+.btn-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 105px;
+  height: 38px;
+  color: #FFF;
+  border: 1px solid #008ECB;
+  background: transparent;
+  border-radius: 5px;
+  font-family: Amaranth-Regular;
+}
+.btn-project .icon-github {
+  fill: #008ECB;
+  padding: 4px;
+  border: 1px solid #008ECB;
+  border-radius: 50px;
+}
+.btn-project .icon-github, .icon-LinkURL {
+  width: 16px;
+  height: 16px;
+}

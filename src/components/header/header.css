@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  height: 50px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.icon-menuburger {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}

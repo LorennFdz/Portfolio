@@ -1,0 +1,32 @@
+.footer {
+  background: #00546B;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+  color: #FFFFFFB5;
+}
+.footer-copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 210px;
+}
+.footer-copy p {
+  width: 180px;
+}
+.footer-copy .icon-copyright {
+  width: 24px;
+}
+.footer-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 82px;
+}
+.footer-contact .icon-contact {
+  width: 20px;
+  stroke: #FFFFFFB5;
+}

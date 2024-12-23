@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Amaranth-Regular';
+  src: url('../../fonts/Amaranth/Amaranth-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Amaranth-Bold';
+  src: url('../../fonts/Amaranth/Amaranth-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Amaranth-BoldItalic';
+  src: url('../../fonts/Amaranth/Amaranth-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Amaranth-Italic';
+  src: url('../../fonts/Amaranth/Amaranth-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Onest-Regular';
+  src: url('../../fonts/Onest/static/Onest-Regular.ttf') format('truetype');
+}
+
+body {
+  background: #171821;
+  width: 100%;
+  font-family: Amaranth-Regular;
+}
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../img/background-title.webp');
+  background-position: center;
+  background-size: cover;
+  filter: blur(1.5px);
+  z-index: -1;
+}
+.section-footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+}
