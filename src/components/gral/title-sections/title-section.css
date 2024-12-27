@@ -1,6 +1,7 @@
 .title-section {
   display: flex;
   gap: 15px;
+  padding-left: 20px;
   color: #FFF;
 }
 .title-section h2 {

@@ -6,9 +6,7 @@ import './skills.css'
 export const Skills = () => {
   return (
     <>
-    <section className='section-skills'>
-      <TitleSection text='Habilidades' icon={<IconSkills />} />
-    </section>
+    <TitleSection text='Habilidades' icon={<IconSkills />} />
     <section className='skills'>
       <Skill text="HTML" icon={<IconHTML />} />
       <Skill text="CSS" icon={<IconCSS />} />

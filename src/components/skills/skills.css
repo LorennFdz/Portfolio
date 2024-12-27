@@ -3,12 +3,12 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   margin: 30px auto 0;
-  width: 280px;
+  width: 87.5%;
   overflow-x: auto;
 }
 .skills::-webkit-scrollbar {
   display: none;
 }
 .section-skills {
-  margin: 70px 0 30px 20px;
+  padding-top: 70px;
 }

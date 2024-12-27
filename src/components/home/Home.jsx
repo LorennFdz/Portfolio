@@ -1,3 +1,4 @@
+import { useRef } from "react"
 import { AboutMe } from "../about-me/AboutMe"
 import { Footer } from "../footer/Footer"
 import { Header } from "../header/Header"
@@ -6,17 +7,26 @@ import { Projects } from "../projects/Projects"
 import { Skills } from "../skills/Skills"
 import './home.css'
 export const Home = () => {
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const aboutMeRef = useRef(null);
+
   return (
     <>
-    <Header />
+    <Header projectsRef={projectsRef} skillsRef={skillsRef} aboutMeRef={aboutMeRef} />
     <section className="home-page">
-      {/*<Header /> */}
       <HomePage />
     </section>
     <main>
-      <Projects />
-      <Skills />
-      <AboutMe />
+      <section ref={projectsRef} className="section-projects">
+        <Projects />
+      </section>
+      <section ref={skillsRef} className='section-skills'>
+        <Skills />
+      </section>
+      <section ref={aboutMeRef} className='about-me'>
+        <AboutMe />
+      </section>
     </main>
     <section className="section-footer">
       <Footer />

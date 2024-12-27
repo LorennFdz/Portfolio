@@ -1,33 +1,90 @@
 import { ButtonHomePage } from "../gral/buttons/ButtonHomePage"
 import { IconContact, IconCV, IconGitHub, IconLinkedIn2 } from "../icons/icons"
 import './homePage.css'
+import { useEffect, useRef } from "react"
 export const HomePage = () => {
+  
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const image = imageRef.current;
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        image.classList.add('small-image');
+      } else {
+        image.classList.remove('small-image');
+      }
+    };    
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+  /*
+  Si quisiera hacerlo con gmail...
+  const openGmail = () => {
+    window.open('https://mail.google.com/mail/?view=cm&to=loreenfernandez.14@gmail.com&subject=Consulta%20desde%20mi%20portafolio', '_blank');
+  }*/
+
   return (
     <>
-    <figure className="avatar-image">
+    <figure ref={imageRef} onClick={handleClick} className={scrollY.current > 0 ? "avatar-image scrolling" : "avatar-image"}>
       <img src="./src/img/avatar-portfolio.webp" alt="avatar image" />
     </figure>
-    <article className="available-to-work">
-      <ButtonHomePage text="Disponible para trabajar" />
-    </article>
-    <article className="title-homePage">
-      <h1>{"<"} Hola, Soy <span className="span-homePage">{"{"} Lorenzo Fernández {"}"}</span> </h1>
-      <h1>Desarrollador Web Full Stack {"/>"}</h1>
-    </article>
-    <article className="btns-homePage">
-      <article className="btns-contact-homePage">
-        <ButtonHomePage text="Contáctame" Icon={<IconContact />} />
-        <ButtonHomePage text="Visualizar CV" Icon={<IconCV />} />
+    <section className="content-homepage">
+      <article className="available-to-work">
+        <ButtonHomePage text="Disponible para trabajar" />
       </article>
-      <article className="btns-svg-homePage">
-        <article>
-          <IconGitHub />
+      <article className="title-homePage">
+        <h1>{"<"} Hola, Soy <span className="span-homePage">{"{"} Lorenzo Fernández {"}"}</span> </h1>
+        <h1>Desarrollador Web Full Stack {"/>"}</h1>
+      </article>
+      <article className="btns-homePage">
+        <article className="btns-contact-homePage">
+          <a
+            href={`mailto:loreenfernandez.14@gmail.com`}
+          >
+            <ButtonHomePage text="Contáctame" Icon={<IconContact />} />
+          </a>
+          <a 
+            href="https://drive.google.com/drive/folders/1v7wZ3muKWH2r2-u9jf4FWE7eanzAFBQf?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <ButtonHomePage text="Visualizar CV" Icon={<IconCV />} />
+          </a>
         </article>
-        <article>
-          <IconLinkedIn2 />
+        <article className="btns-svg-homePage">
+          <article>
+            <a 
+              href="https://github.com/LorennFdz" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+            <IconGitHub />
+            </a>
+          </article>
+          <article>
+            <a 
+              href="https://www.linkedin.com/in/lorenzofdz08" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <IconLinkedIn2 />
+            </a>
+          </article>
         </article>
       </article>
-    </article>
+    </section>
     </>
   )
 }

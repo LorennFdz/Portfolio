@@ -8,9 +8,7 @@ import './projects.css';
 export const Projects = () => {
   return (
     <>
-    <section className='section-projects'>
-      <TitleSection text='Proyectos' icon={<IconProjects />} />
-    </section>
+    <TitleSection text='Proyectos' icon={<IconProjects />} />
     <section className='projects'>
       <Project 
         image={"./src/img/project-supermarket.webp"}
@@ -22,6 +20,8 @@ export const Projects = () => {
           { text: 'HTML', icon: <IconHTML /> },
           { text: 'CSS', icon: <IconCSS /> },
         ]}
+        code="https://github.com/LorennFdz/supermarket-online"
+        link="https://supermarket-online.vercel.app/"
       />
       <Project 
         image={"./src/img/project-cellshop.webp"}
@@ -33,6 +33,8 @@ export const Projects = () => {
           { text: 'HTML', icon: <IconHTML /> },
           { text: 'CSS', icon: <IconCSS /> },
         ]}
+        code="https://github.com/LorennFdz/Cellshop_Tandil"
+        link="https://cellshop-tandil.vercel.app"
       />
     </section>
     <article className='load-more-project'>

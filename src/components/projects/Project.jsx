@@ -3,7 +3,7 @@ import { ButtonSkills } from '../gral/buttons/ButtonSkills';
 import { IconCalendar, IconGitHub, IconLinkURL } from '../icons/icons';
 import './project.css'
 
-export const Project = ({ image, title, description, date, skills}) => {
+export const Project = ({ image, title, description, date, skills, code, link}) => {
   return (
     <article className='project'>
       <figure className='img-project'>
@@ -24,8 +24,20 @@ export const Project = ({ image, title, description, date, skills}) => {
           ))}
         </article>
         <article className='btns-project'>
-          <ButtonProject text="Código" icon={<IconGitHub/>} />
-          <ButtonProject text="Link" icon={<IconLinkURL/>} />
+          <a 
+            href={code} 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <ButtonProject text="Código" icon={<IconGitHub/>} />
+          </a>
+          <a 
+            href={link}
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <ButtonProject text="Link" icon={<IconLinkURL/>} />
+          </a>
         </article>
       </article>
     </article>

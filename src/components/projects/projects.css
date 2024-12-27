@@ -1,18 +1,21 @@
 .section-projects {
-  margin: 160px 0 30px 20px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 .projects {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
   justify-content: center;
   color: #FFF;
   font-family: Onest-Regular;
   margin: 0 auto;
-  width: 280px;
+  width: 100%;
   gap: 35px;
-  overflow-x: hidden;
 }
 .load-more-project {
-  margin: 30px 0 0 20px;
+  display: none;
+  margin-left: 20px;
 }
