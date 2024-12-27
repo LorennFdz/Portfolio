@@ -13,8 +13,8 @@ export const Home = () => {
 
   return (
     <>
-    <Header projectsRef={projectsRef} skillsRef={skillsRef} aboutMeRef={aboutMeRef} />
     <section className="home-page">
+      <Header projectsRef={projectsRef} skillsRef={skillsRef} aboutMeRef={aboutMeRef} />
       <HomePage />
     </section>
     <main>
