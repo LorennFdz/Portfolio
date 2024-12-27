@@ -37,7 +37,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('./img/background-title.webp');
+  background-image: url('../../../public/img/background-title.webp');
   background-position: center;
   background-size: cover;
   filter: blur(1.5px);
