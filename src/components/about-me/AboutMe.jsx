@@ -13,7 +13,7 @@ export const AboutMe = () => {
     </section>
     <section>
       <figure className='img-about-me'>
-        <img src="../src/img/foto-cv.webp" alt="" />
+        <img src="./img/foto-cv.webp" alt="" />
       </figure>
     </section>
     </>

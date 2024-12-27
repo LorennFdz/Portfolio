@@ -11,7 +11,7 @@ export const Projects = () => {
     <TitleSection text='Proyectos' icon={<IconProjects />} />
     <section className='projects'>
       <Project 
-        image={"./src/img/project-supermarket.webp"}
+        image={"./img/project-supermarket.webp"}
         title="SUPERMARKET ONLINE SHOP"
         description="Sitio web realizado como proyecto personal para mejorar las habilidades técnicas de React.Js"
         date="Diciembre 2023 - Marzo 2024"
@@ -24,7 +24,7 @@ export const Projects = () => {
         link="https://supermarket-online.vercel.app/"
       />
       <Project 
-        image={"./src/img/project-cellshop.webp"}
+        image={"./img/project-cellshop.webp"}
         title="CELLSHOP TANDIL"
         description="Sitio web realizado como proyecto personal para mejorar las habilidades técnicas de HTML, CSS Y JavaScript"
         date="Agosto 2022"

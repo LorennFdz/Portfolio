@@ -38,7 +38,7 @@ export const HomePage = () => {
   return (
     <>
     <figure ref={imageRef} onClick={handleClick} className={scrollY.current > 0 ? "avatar-image scrolling" : "avatar-image"}>
-      <img src="./src/img/avatar-portfolio.webp" alt="avatar image" />
+      <img src="./img/avatar-portfolio.webp" alt="avatar image" />
     </figure>
     <section className="content-homepage">
       <article className="available-to-work">
