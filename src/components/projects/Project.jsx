@@ -14,14 +14,14 @@ export const Project = ({ image, title, description, date, skills, code, link}) 
           <h3>{title}</h3>
           <p>{description}</p>
         </article>
-        <article className='date-project'>
-          <IconCalendar />
-          <p>{date}</p>
-        </article>
         <article className='btns-skills-project'>
           {skills.map((skill) => (
             <ButtonSkills key={skill.text} {...skill} />
           ))}
+        </article>
+        <article className='date-project'>
+          <IconCalendar />
+          <p>{date}</p>
         </article>
         <article className='btns-project'>
           <a 

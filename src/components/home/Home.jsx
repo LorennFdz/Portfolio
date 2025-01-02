@@ -24,7 +24,7 @@ export const Home = () => {
       <section ref={skillsRef} className='section-skills'>
         <Skills />
       </section>
-      <section ref={aboutMeRef} className='about-me'>
+      <section ref={aboutMeRef} className='section-about-me'>
         <AboutMe />
       </section>
     </main>

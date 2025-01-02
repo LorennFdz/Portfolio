@@ -1,4 +1,15 @@
+.content-skills::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background: linear-gradient(to right,#e76f00,#30a9dc);
+  animation: border-animation 2s linear infinite;
+  z-index: -1;
+}
 .content-skills {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -7,15 +18,27 @@
   width: 105px;
   height: 105px;
   padding: 10px;
-  border: 1px solid #30A9DC;
   border-radius: 10px;
   color: #FFF;
+  overflow: hidden;
+  z-index: 0;
+}
+.content-skills::after {
+  content: '';
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  border-radius: inherit;
+  background: #171821;
+  z-index: 1;
 }
 .content-skills h2 {
   font-size: 18px;
   font-weight: 400;
+  z-index: 2;
 }
 .content-skills svg {
   width: 80px;
   height: 80px;
+  z-index: 2;
 }

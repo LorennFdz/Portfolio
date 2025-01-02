@@ -1,4 +1,4 @@
-.btn-skill {
+/* .btn-skill {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,11 +12,26 @@
   color: #CCC;
   font-size: 12px;
   font-family: Amaranth-Regular;
+} */
+.btn-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 90px;
+  height: 24px;
+  border-radius: 20px;
+  border: 1px solid #F3F4F680;
+  background: transparent;
+  outline: none;
+  color: #CCC;
+  font-size: 12px;
+  font-family: Amaranth-Regular;
 }
 .btn-skill .icon-react,
 .btn-skill .icon-HTML,
 .btn-skill .icon-CSS,
 .btn-skill .icon-javascript {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }

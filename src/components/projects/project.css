@@ -4,24 +4,39 @@
   align-items: center;
   justify-content: center;
   width: 87.5%;
+  border-radius: 10px;
+  border-top: 0;
+  padding: 1px;
+  padding-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+.project::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  border-radius: inherit;
+  background: linear-gradient(to right,#e76f00,#30a9dc);
+  animation: border-animation 2s linear infinite;
+  z-index: -1;
 }
 .content-project {
-  border: 1px solid #30A9DC;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background: #171821;
   padding: 17px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  border-top: 0;
   overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .content-project .title-description-project {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-left: 13px;
+  margin: 0 13px;
 }
 .content-project .title-description-project h3 {
   font-size: 16px;
@@ -64,4 +79,61 @@
   display: flex;
   gap: 15px;
   margin-left: 13px;
+}
+
+@media (min-width: 600px) {
+  .project {
+    flex-direction: row;
+    align-items: initial;
+    margin: 10px;
+    height: 180px;
+    padding-top: 1px;
+  }
+  .project::before {
+    top: -50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .content-project {
+    padding-top: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    gap: 5px;
+  }
+  .content-project .title-description-project {
+    gap: 10px;
+  }
+  .img-project {
+    width: 100%;
+  }
+  .img-project img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+  .btns-skills-project {
+    position: absolute;
+    gap: 5px;
+    bottom: 1px;
+    left: 1px;
+    padding: 10px 0 8px 2px;
+    border-bottom-left-radius: 10px;
+    background: #171821;
+  }
+  .btns-skills-project .btn-skill {
+    width: 95px;
+    height: 25px;
+  }
+  .btns-project {
+    position: absolute;
+    gap: 10px;
+    right: 10px;
+    bottom: 10px;
+    margin-left: 0;
+  }
+  .btns-project .btn-project {
+    gap: 5px;
+    width: 100px;
+    height: 35px;
+  }
 }

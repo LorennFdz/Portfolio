@@ -1,24 +1,66 @@
-.about-me {
+.section-about-me {
   padding-top: 70px;
 }
 .content-about-me {
   display: flex;
   flex-direction: column;
+  width: 87.5%;
+  margin: 0 auto;
+}
+.content-about-me .article-about-me {
+  display: flex;
+  flex-direction: column;
   gap: 15px;
   color: #FFF;
   font-size: 14px;
-  width: 87.5%;
+  width: 100%;
   margin: 30px auto;
   font-family: Onest-Regular;
 }
-.content-about-me span {
+.article-about-me span {
   color: #008ECB;
 }
 .img-about-me {
-  width: 280px;
-  margin: 0 auto;
+  width: 100%;
 }
 .img-about-me img {
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 600px) {
+  .section-about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 470px;
+  }
+  .content-about-me {
+    position: relative;
+    height: 415px;
+  }
+  .content-about-me .article-about-me {
+    width: 0;
+    margin: 0;
+  }
+  .content-about-me .article-about-me .text-one,
+  .content-about-me .article-about-me .text-two,
+  .content-about-me .article-about-me .text-three {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .content-about-me .article-about-me .text-two {
+    top: 18%;
+    width: 50%;
+  }
+  .content-about-me .article-about-me .text-three {
+    top: 78%;
+  }
+  .img-about-me {
+    position: absolute;
+    top: 18%;
+    right: 0;
+    width: 45%;
+  }
 }
