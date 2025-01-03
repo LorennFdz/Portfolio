@@ -4,7 +4,7 @@
   position: fixed;
   z-index: 5;
 }
-.header.fixed{
+.header.fixed {
   z-index: 5;
   background: #171821;
   border-bottom: 1px solid #008ECB;
@@ -43,15 +43,26 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  width: 150px;
+  width: 90%;
+  margin: 0 auto;
   color: #30A9DC;
   font-size: 18px;
   font-family: Onest-Regular;
-  padding-right: 20px;
+}
+.item-menu span {
+  width: 130px;
+  text-align: right;
 }
 .item-menu .icon-projects,
 .item-menu .icon-skills,
 .item-menu .icon-aboutMe,
 .item-menu .icon-contact {
   width: 24px;
+}
+.item-menu .item-menu-contact {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

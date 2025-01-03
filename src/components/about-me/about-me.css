@@ -21,7 +21,8 @@
   color: #008ECB;
 }
 .img-about-me {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 .img-about-me img {
   width: 100%;
@@ -49,6 +50,7 @@
     position: absolute;
     top: 0%;
     left: 0%;
+    width: 95%;
   }
   .content-about-me .article-about-me .text-two {
     top: 18%;
@@ -61,6 +63,88 @@
     position: absolute;
     top: 18%;
     right: 0;
-    width: 45%;
+    width: 35%;
   }
 }
+@media (min-width: 679px) {
+  .content-about-me .article-about-me .text-three {
+    top: 70%;
+  }
+  .img-about-me {
+    width: 30%;
+  }
+}
+@media (min-width: 750px) {
+  .section-about-me {
+    height: 385px;
+  }
+  .content-about-me {
+    height: 415px;
+  }
+  .content-about-me .article-about-me .text-one,
+  .content-about-me .article-about-me .text-three {
+    width: 100%;
+  }
+  .content-about-me .article-about-me .text-two {
+    top: 20%;
+    width: 60%;
+  }
+  .content-about-me .article-about-me .text-three {
+    top: 75%;
+  }
+  .img-about-me {
+    top: 20%;
+    right: 0;
+    width: 180px;
+  }
+}
+@media (min-width: 750px) {
+  .section-about-me {
+    height: auto;
+  }
+  .content-about-me {
+    flex-direction: row;
+    height: 330px;
+  }
+  .content-about-me .article-about-me .text-one,
+  .content-about-me .article-about-me .text-three {
+    width: 100%;
+  }
+  .content-about-me .article-about-me .text-two {
+    top: 20%;
+    width: 60%;
+  }
+  .content-about-me .article-about-me .text-three {
+    top: 75%;
+  }
+  .img-about-me {
+    top: 18%;
+  }
+}
+@media (min-width: 825px) {
+  .content-about-me {
+    position: initial;
+    height: auto;
+  }
+  .content-about-me .article-about-me {
+    width: 60%;
+  }
+  .content-about-me .article-about-me .text-one,
+  .content-about-me .article-about-me .text-two,
+  .content-about-me .article-about-me .text-three {
+    position: initial;
+    width: 100%;
+  }
+  .img-about-me {
+    position: initial;
+    width: 35%;
+  }
+  .img-about-me img {
+    object-fit: contain;
+  }
+  
+}
+
+
+
+

@@ -61,14 +61,14 @@ export const Header = ({ projectsRef, skillsRef, aboutMeRef }) => {
           </figure>
           <span>SOBRE MI</span>
         </li>
-        <a href={`mailto:loreenfernandez.14@gmail.com`} >
-          <li className="item-menu">
+        <li className="item-menu">
+          <a href={`mailto:loreenfernandez.14@gmail.com`} className="item-menu-contact">
             <figure>
               <IconContact />
             </figure>
             <span>CONTACTO</span>
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
     )}
     </>
