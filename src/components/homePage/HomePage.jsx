@@ -64,6 +64,7 @@ export const HomePage = () => {
               href="https://github.com/LorennFdz" 
               target="_blank" 
               rel="noopener noreferrer"
+              title="GitHub"
             >
             <IconGitHub />
             </a>
@@ -71,7 +72,8 @@ export const HomePage = () => {
           <article>
             <a 
               href="https://www.linkedin.com/in/lorenzofdz08" 
-              target="_blank" 
+              target="_blank"
+              title="LinkedIn" 
               rel="noopener noreferrer"
             >
               <IconLinkedIn2 />
