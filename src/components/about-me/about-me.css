@@ -142,7 +142,11 @@
   .img-about-me img {
     object-fit: contain;
   }
-  
+}
+@media (min-width: 1024px) {
+  .content-about-me .article-about-me {
+    font-size: 16px;
+  }
 }
 
 

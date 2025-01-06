@@ -179,3 +179,32 @@
     margin-left: 13px;
   }
 }
+@media (min-width: 860px) {
+  .project::before {
+    top: -150%;
+    left: -5%;
+    transform: translate(-5%, 0%);
+  }
+}
+@media (min-width: 1024px) {
+  .project {
+    height: auto;
+  }
+  .content-project {
+    padding-top: 10px;
+    gap: 10px;
+  } 
+  .content-project .title-description-project h3 {
+    font-size: 22px;
+  }
+  .content-project .title-description-project p {
+    font-size: 16px;
+  }
+  .img-project {
+    height: auto;
+  }
+  .btns-skills-project .btn-skill {
+    width: 100px;
+    height: 30px;
+  }
+}

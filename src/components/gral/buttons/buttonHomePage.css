@@ -18,3 +18,8 @@
   height: 24px;
   stroke: #FFF;
 }
+@media (min-width: 1280px) {
+  .btn-homePage {
+    font-size: 18px;
+  }
+}

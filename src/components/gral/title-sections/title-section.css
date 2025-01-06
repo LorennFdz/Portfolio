@@ -1,5 +1,6 @@
 .title-section {
   display: flex;
+  align-items: center;
   gap: 15px;
   padding-left: 20px;
   color: #FFF;
@@ -7,4 +8,10 @@
 .title-section h2 {
   font-size: 20px;
   font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  .title-section h2 {
+    font-size: 28px;
+  }
 }

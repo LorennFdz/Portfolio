@@ -9,7 +9,7 @@ export const HomePage = () => {
   useEffect(() => {
     const image = imageRef.current;
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.innerWidth < 1024 && window.scrollY > 50) {
         image.classList.add('small-image');
       } else {
         image.classList.remove('small-image');
@@ -29,11 +29,6 @@ export const HomePage = () => {
       behavior: 'smooth'
     });
   };
-  /*
-  Si quisiera hacerlo con gmail...
-  const openGmail = () => {
-    window.open('https://mail.google.com/mail/?view=cm&to=loreenfernandez.14@gmail.com&subject=Consulta%20desde%20mi%20portafolio', '_blank');
-  }*/
 
   return (
     <>
