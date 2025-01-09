@@ -10,6 +10,7 @@
   background: transparent;
   border-radius: 5px;
   font-family: Amaranth-Regular;
+  cursor: pointer;
 }
 .btn-project .icon-github {
   fill: #008ECB;
