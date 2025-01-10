@@ -12,6 +12,10 @@
   font-family: Amaranth-Regular;
   cursor: pointer;
 }
+.btn-project:hover {
+  color: #008ECB;
+  background: #CCC;
+}
 .btn-project .icon-github {
   fill: #008ECB;
   padding: 4px;

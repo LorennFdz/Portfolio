@@ -13,10 +13,17 @@
   font-size: 16px;
   font-family: Amaranth-Regular;
 }
+.btn-homePage:hover {
+  background: #FFF;
+  color: #008ECB;
+}
 .btn-homePage svg {
   width: 24px;
   height: 24px;
   stroke: #FFF;
+}
+.btn-homePage:hover svg {
+  stroke: #008ECB;
 }
 @media (min-width: 1280px) {
   .btn-homePage {
