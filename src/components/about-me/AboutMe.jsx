@@ -13,7 +13,7 @@ export const AboutMe = () => {
         <p className='text-three'>Estoy buscando mi primer trabajo en el mundo laboral para poder aplicar mis habilidades en un entorno profesional y seguir creciendo como desarrollador. Me considero una persona <span>proactiva, con ganas de aprender y siempre dispuesta a colaborar en equipo.</span> Si necesitas un desarrollador web, ¡No dudes en contactarme!</p>
       </article>
       <figure className='img-about-me'>
-        <img src="./img/foto-cv.webp" alt="" />
+        <img src="./img/foto-cv.webp" alt="imagen presentación Lorenzo Fdz Dev" />
       </figure>
     </section>
     </>
