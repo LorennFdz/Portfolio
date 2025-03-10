@@ -46,7 +46,7 @@ export const HomePage = () => {
       <article className="btns-homePage">
         <article className="btns-contact-homePage">
           <a
-            href={`mailto:loreenfernandez.14@gmail.com`}
+            href={`mailto:lorenzofdzdev@gmail.com`}
           >
             <ButtonHomePage text="Contáctame" Icon={<IconContact />} />
           </a>

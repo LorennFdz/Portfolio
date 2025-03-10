@@ -7,7 +7,7 @@ export const Footer = () => {
         <IconCopyright />
         <p> 2025 Lorenzo Fernández.</p>
       </article>
-      <a href={`mailto:loreenfernandez.14@gmail.com`} >
+      <a href={`mailto:lorenzofdzdev@gmail.com`} >
         <article className="footer-contact">
           <IconContact />
           <p>Contacto</p>
