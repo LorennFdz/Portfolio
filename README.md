@@ -1,4 +1,4 @@
-# Personal Portfolio | Lorenzo Fernández
+# Portfolio Personal | Lorenzo Fernández
 
 Este repositorio contiene el código fuente de mi portfolio profesional. Es una plataforma diseñada para centralizar mi trayectoria como **Desarrollador de Software**, exponiendo mis proyectos destacados, stack tecnológico y formación académica como **Técnico Universitario en Desarrollo de Aplicaciones Informáticas**.
 
